@@ -1,0 +1,30 @@
+OMSI Hof Manager – Hofdateien mit einem Tastendruck auf alle Busse verteilen
+
+Kennst du das? Neue Map installiert, und jetzt muss die Hofdatei in zig Busordner kopiert werden. Damit ist jetzt Schluss.
+
+Mit dem OMSI Hof Manager sammelst du alle deine Hofdateien an einem Ort und verteilst sie mit einem einzigen Tastendruck (F5) auf alle Busse, die du vorher ausgewählt hast.
+
+FUNKTIONEN
+• Findet OMSI 2 automatisch über Steam (auch in anderen Steam-Bibliotheken)
+• Erkennt alle Busse im Vehicles-Ordner automatisch
+• Hofdateien per Drag & Drop, Dateiauswahl oder ganzen Ordner hinzufügen
+• „Aus OMSI importieren“: übernimmt alle Hofdateien, die schon in deinen Bussen liegen
+• Zeigt bei jedem Bus an, wie viele Hofdateien ihm noch fehlen
+• Verteilen mit F5, identische Dateien werden übersprungen
+• Optional überschreiben, mit automatischer Sicherung der alten Versionen
+• Hofdateien auch wieder aus Bussen entfernen (in den Papierkorb)
+• Modernes Windows-11-Design mit Hell-/Dunkelmodus
+• Keine Installation, kein .NET nötig – einfach entpacken und starten
+• Portabler Modus möglich
+
+VORAUSSETZUNGEN
+Windows 10 oder 11 (64-Bit)
+
+HINWEIS
+Beim ersten Start kann die Windows-SmartScreen-Meldung erscheinen, weil das Programm nicht kostenpflichtig signiert ist. Einfach auf „Weitere Informationen“ → „Trotzdem ausführen“ klicken. Der komplette Quellcode ist öffentlich auf GitHub einsehbar.
+
+Eine ausführliche Anleitung liegt dem Download bei (Anleitung.txt).
+
+Open Source (MIT-Lizenz) – Quellcode: https://github.com/DevSoeren29/Omsi-Hof-Manager
+Download: https://github.com/DevSoeren29/Omsi-Hof-Manager/releases
+Fehler gefunden oder Ideen? Schreib es gern in die Kommentare oder als Issue auf GitHub.

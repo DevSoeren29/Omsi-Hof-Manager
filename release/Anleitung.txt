@@ -1,0 +1,106 @@
+==============================================================
+  OMSI Hof Manager  -  Version 1.0.0
+  Hofdateien sammeln und mit einem Tastendruck auf Busse verteilen
+==============================================================
+
+INSTALLATION
+------------
+Keine Installation nötig. Die Datei "OmsiHofManager.exe" in einen
+beliebigen Ordner entpacken (z. B. Desktop oder Dokumente) und starten.
+Es muss nichts zusätzlich installiert werden (auch kein .NET).
+
+Voraussetzung: Windows 10 oder 11 (64-Bit).
+
+
+HINWEIS: WINDOWS-SMARTSCREEN
+----------------------------
+Beim ersten Start kann Windows die Meldung
+"Der Computer wurde durch Windows geschützt" anzeigen.
+Das liegt daran, dass das Programm nicht kostenpflichtig digital
+signiert ist - es ist kein Virus. Zum Starten:
+
+  1. Auf "Weitere Informationen" klicken
+  2. Auf "Trotzdem ausführen" klicken
+
+Der komplette Quellcode ist öffentlich einsehbar (siehe unten).
+
+
+SO GEHT'S
+---------
+1. Programm starten.
+   Der OMSI-2-Ordner wird automatisch über Steam gefunden.
+   Falls nicht: oben auf "Durchsuchen..." klicken und den Ordner
+   "OMSI 2" (oder "OMSI 2\Vehicles") auswählen.
+
+2. Hofdateien in die Bibliothek (linke Seite) holen:
+   - .hof-Dateien oder ganze Ordner einfach ins Fenster ziehen, oder
+   - "Hinzufügen" bzw. "Ordner..." klicken, oder
+   - "Aus OMSI importieren" klicken: übernimmt alle Hofdateien, die
+     bereits in deinen Bussen liegen.
+
+3. Häkchen setzen:
+   - links bei den Hofdateien, die verteilt werden sollen
+   - rechts bei den Bussen, die sie bekommen sollen
+
+4. F5 drücken (oder auf "Verteilen" klicken). Fertig!
+
+Die Hofdateien werden direkt in die jeweiligen Busordner kopiert
+(neben die .bus-Dateien), genau dort, wo OMSI sie erwartet.
+
+
+WEITERE FUNKTIONEN
+------------------
+- Das farbige Feld rechts neben jedem Bus zeigt, wie viele der
+  ausgewählten Hofdateien diesem Bus noch fehlen.
+- "Unvollständige" wählt alle Busse aus, denen etwas fehlt.
+- "Vorhandene Hofdateien überschreiben": ersetzt ältere Versionen.
+  Mit "Sicherung anlegen" werden die alten Dateien vorher gesichert.
+- "Aus Bussen entfernen": löscht die ausgewählten Hofdateien wieder
+  aus den ausgewählten Bussen (sie landen im Papierkorb).
+- Rechtsklick auf einen Bus: Busordner im Explorer öffnen.
+
+
+TASTENKÜRZEL
+------------
+  F5          Hofdateien verteilen
+  Strg + O    Hofdateien hinzufügen
+  Strg + I    Aus OMSI importieren
+  Strg + R    Busse neu einlesen
+  Entf        Markierte Hofdateien aus der Bibliothek entfernen
+
+
+FEHLERMELDUNG "ZUGRIFF VERWEIGERT"
+----------------------------------
+Liegt OMSI unter "C:\Program Files (x86)", fehlen manchmal die
+Schreibrechte. Das Programm bietet dann automatisch an, sich als
+Administrator neu zu starten. Außerdem sollte OMSI 2 beim Verteilen
+geschlossen sein.
+
+
+WO WERDEN DATEN GESPEICHERT?
+----------------------------
+  Bibliothek:     %AppData%\OmsiHofManager\Hofdateien
+  Sicherungen:    %AppData%\OmsiHofManager\Backups
+  Einstellungen:  %AppData%\OmsiHofManager\settings.json
+
+(%AppData% einfach in die Adresszeile des Explorers eingeben.)
+
+Portabler Modus: Eine leere Datei "portable.txt" neben die EXE legen.
+Dann speichert das Programm alles im Unterordner "Daten" neben der EXE,
+z. B. für einen USB-Stick.
+
+
+DEINSTALLATION
+--------------
+Die EXE löschen. Wer auch Bibliothek und Einstellungen entfernen
+möchte, löscht zusätzlich den Ordner %AppData%\OmsiHofManager.
+Die verteilten Hofdateien in den Bussen bleiben erhalten.
+
+
+QUELLCODE & LIZENZ
+------------------
+Open Source unter der MIT-Lizenz (siehe LICENSE.txt).
+Quellcode: https://github.com/DevSoeren29/Omsi-Hof-Manager
+
+Dieses Programm steht in keiner Verbindung zu MR Software oder
+Aerosoft. OMSI ist eine Marke der jeweiligen Rechteinhaber.

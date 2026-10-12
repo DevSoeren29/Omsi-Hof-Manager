@@ -5,6 +5,15 @@ und sie **mit einem Tastendruck (F5)** auf beliebig viele ausgewählte Busse zu 
 
 Modernes Windows-11-Design (Fluent, Mica, automatischer Hell-/Dunkelmodus).
 
+## Download
+
+**[➜ Neueste Version herunterladen](https://github.com/DevSoeren29/Omsi-Hof-Manager/releases/latest)**
+
+Zip entpacken, `OmsiHofManager.exe` starten – keine Installation, kein .NET nötig (Windows 10/11, 64-Bit).
+
+> Beim ersten Start kann Windows SmartScreen warnen, weil das Programm nicht kostenpflichtig signiert ist:
+> „Weitere Informationen“ → „Trotzdem ausführen“.
+
 ## Funktionen
 
 - **Hof-Bibliothek** – deine gesammelten Hofdateien an einem Ort
